@@ -9,7 +9,14 @@
   </head>
   <body>
 	<header class="dotted">
-		<div class="container">
+		<div class="container dotted">
 			<p><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></p>
 		</div>
 	</header>
+	<div class="container dotted">
+		<nav>
+			<ul>
+				<?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
+			</ul>
+		</nav>
+	</div>

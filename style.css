@@ -1,0 +1,45 @@
+/*
+Theme Name: Dotted
+Theme URI: http://guilarte.esy.es
+Author: David Guilarte
+Author URI: http://guilarte.esy.es
+Description: Este es un tema creado solo para razones educativas.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, two-columns, responsive layout
+Text Domain: dotted
+*/
+
+@import url('css/normalize.css');
+
+.dotted{
+	border: 1px dashed black;
+}
+.text-center{
+	text-align: center;
+}
+header, footer{
+	height: 50px;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.thumbnail{
+	padding: 0px 15px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0px 0px 20px -4px;
+	width: 25%;
+}
+@media (max-width: 992px){
+	.thumbnail{
+		width: 33.33%;
+	}
+}
+@media (max-width: 768px){
+	.thumbnail, .container{
+		width: 100%;
+	}
+}
